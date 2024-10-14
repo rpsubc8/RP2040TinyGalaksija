@@ -10,6 +10,32 @@ Using use_lib_hdmi in gbConfig.h (hdmi connector on waveshare board):<br>
 | pins_tmds | 26, 24, 22  |
 | pins_clk  | 28          |
 
+<br><br>
+Using use_lib_vga in gbConfig.h:<br>
+
+| VGA GPIO  | Description  |
+| --------- | ------------ |
+| 18        | RED          | 
+| 19        | GREEN        |
+| 20        | BLUE         |
+| 16        | HSync        |
+| 17        | VSync        |
+
+<br>
+In this connector we have:<br><br>
+
+| VGA         | Description  |
+| ----------- | ------------ |
+| 1           | RED          | 
+| 2           | GREEN        |
+| 3           | BLUE         |
+| 13          | HSYNC        |
+| 14          | VSYNC        |
+| 5,6,7,8,11  | GROUND       |
+
+Some modern monitors may need 5v (very low amperage) on pin 9, which in the current schematic is not connected (N/C).<br>
+
+
 
 <br><br>
 <h1>PS/2 keyboard USB C</h1>
@@ -45,5 +71,5 @@ For some emulators, when using the native HID protocol via USB, the keyboard mus
 
 
 <h1>Precompile version</h1>
-Versions HDMI, with PS/2 to USB C converter (ps2usb) are available.<br>
+Versions VGA, HDMI, with PS/2 to USB C converter (ps2usb) are available.<br>
 <a href='https://github.com/rpsubc8/RP2040TinyGalaksija/tree/main/precompile'>https://github.com/rpsubc8/RP2040TinyGalaksija/tree/main/precompile</a>
