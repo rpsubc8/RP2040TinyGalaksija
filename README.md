@@ -42,3 +42,8 @@ For some emulators, when using the native HID protocol via USB, the keyboard mus
  <li>activate the option: Optimize Even More (-02) or (-03) for HDMI</li>
 </ul>
 <br><br>
+
+
+<h1>Precompile version</h1>
+Versions HDMI, with PS/2 to USB C converter (ps2usb) are available.<br>
+<a href='https://github.com/rpsubc8/RP2040TinyGalaksija/tree/main/precompile'>https://github.com/rpsubc8/RP2040TinyGalaksija/tree/main/precompile</a>
