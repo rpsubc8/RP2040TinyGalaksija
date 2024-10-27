@@ -1,6 +1,8 @@
 # RP2040 Tiny Galaksija
 Galaksija emulator Waveshare RP2040 pizero
 <center><img src='https://raw.githubusercontent.com/rpsubc8/RP2040TinyGalaksija /main/preview/rp2040pizero.jpg'></center>
+Port I had made from TinyESP32 to RP2040 with VGA and HDMI. Based on the x86 emulator by Miodrag Jevremovic, Tomaž Šolc and Peter Bakota.<br><br>
+<a href='https://github.com/rpsubc8/ESP32TinyGalaksija'>https://github.com/rpsubc8/ESP32TinyGalaksija</a><br><br>
 
 Using use_lib_hdmi in gbConfig.h (hdmi connector on waveshare board):<br>
 
@@ -67,7 +69,34 @@ For some emulators, when using the native HID protocol via USB, the keyboard mus
  <li>No overclock voltage HDMI (1.05v). By default RP2040 runs at 1.10v and 133 Mhz. For HDMI it is required to overclock to 1.25v and 250 Mhz. For HDMI, I have done an undervolt, to be more conservative, i.e. I have left it at 1.05v, being configurable in gbConfig.h. If it doesn't look good, you can go higher.</li> 
  <li>Activate the option: Optimize Even More (-02) or (-03) for HDMI</li>
 </ul>
+
+
+
 <br><br>
+<h1>Tool data2h</h1>
+I have created a very basic tool (win32) to convert .GTP and .GAL files into .h in ready mode to be processed by the emulator.<br>
+It is recommended to have short file names. Additionally, the tool cuts to 32 characters to display in the OSD.<br>
+<center><img src='https://raw.githubusercontent.com/rpsubc8/ESP32TinyGalaksija/main/preview/previewWinData2h.gif'></center>
+We just have to leave the .GAL and .GTP files in the <b>input/GAL</b> folder and <b>input/GTP</b> run the <b>data2h.exe</b> file , so that an output will be generated in the <b>output/dataFlash</b> directory.<a href='https://github.com/rpsubc8/ESP32TinyGalaksija/tree/main/esp32/tools/data2h'>Tool data2h</a><br><br>
+<pre>
+ input/
+  gal/
+  gtp/
+ output/
+  dataFlash/
+   gal/
+   gtp/ 
+</pre>
+Later we must copy the <b>dataFlash</b> directory to the <b>galaksija</b> project, overwriting the previous dataFlash folder. It is recommended to clean the project and compile again.<br>
+This tool is very simple, and does not control errors, so it is recommended to leave the files with very simple names and as simple as possible.<br>
+Since the source code is available, it can be compiled for Linux or for Android under Termux. In Termux we have to install the <b>gcc</b> or <b>clang</b> package and compile:<br>
+<pre>
+ gcc -s data2h.cpp -odata2h.a
+</pre>
+It must be done from the home data directory of the Android device, so if we do it in any other directory, the <b>data2h.a</b> created will never be able to be executed, unless the device is rooted.
+<center><img src='https://raw.githubusercontent.com/rpsubc8/ESP32TinyGalaksija/main/preview/previewTermuxData2h.gif'></center><br><br>
+
+
 
 
 <h1>Precompile version</h1>
