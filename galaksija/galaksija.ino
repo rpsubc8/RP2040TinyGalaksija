@@ -1022,7 +1022,8 @@ void interceptarROMTape()
   //Load GTP
   if (gb_use_debug==1){ Serial.printf("Intercept tape ROM\r\n"); }
   //fflush(stdout);
-  LoadGTPFlash(gb_list_gtp_data[0], gb_list_gtp_size[0]);
+  //LoadGTPFlash(gb_list_gtp_data[0], gb_list_gtp_size[0]);
+  LoadGTPFlash(gb_list_gtp_data[gb_gtp_id_sel_cur], gb_list_gtp_size[gb_gtp_id_sel_cur]);  
   R.PC.W = 0x0317; // BASIC WARM START
  }     
 }

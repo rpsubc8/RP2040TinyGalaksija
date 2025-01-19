@@ -81,7 +81,7 @@
  //Put ROM in flash (free 8192 bytes RAM)
  #define use_lib_rom_flash
  
- //MEMORY uses 8 KN instead of 64 KB RAM
+ //MEMORY uses 8 KB instead of 64 KB RAM
  #define use_lib_ram_8KB
 
 
