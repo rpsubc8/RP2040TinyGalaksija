@@ -35,7 +35,7 @@
   #include "gtpSnakeBalintNenad.h"
   #include "gtpSquash.h"
   #include "gtpSuperCruiserHalilovicJasmin.h"
-  #include "gtpSuperSahPageSoftware.h"
+//  #include "gtpSuperSahPageSoftware.h"
   #include "gtpSvemirskiTrgovacVitanovIlija.h"
   #include "gtpTenis3VujkovDragan.h"
   #include "gtpTenisBalintNenad.h"
@@ -79,7 +79,7 @@
   #include "gtp/gtpSnakeBalintNenad.h"
   #include "gtp/gtpSquash.h"
   #include "gtp/gtpSuperCruiserHalilovicJasmin.h"
-  #include "gtp/gtpSuperSahPageSoftware.h"
+//  #include "gtp/gtpSuperSahPageSoftware.h"
   #include "gtp/gtpSvemirskiTrgovacVitanovIlija.h"
   #include "gtp/gtpTenis3VujkovDragan.h"
   #include "gtp/gtpTenisBalintNenad.h"
@@ -96,7 +96,8 @@
 
 
 
- #define max_list_gtp 43
+ //#define max_list_gtp 43
+ #define max_list_gtp 42
  
  //gtp
  //Titulos
@@ -131,7 +132,7 @@
   "Snake Balint Nenad",
   "Squash",
   "Super Cruiser Hallovic Jasmin",
-  "Super Sah Page Software",
+//  "Super Sah Page Software",
   "Svemirski Trgova Vitanov Ilija",
   "Tenis 3 Vujkov Dragan",
   "Tenis Balint Nenad",
@@ -178,7 +179,7 @@
   3173,
   1504,
   2569,
-  5773,
+//  5773,
   2982,
   1874,
   2389,
@@ -226,7 +227,7 @@
   gb_gtp_data_SnakeBalintNenad,
   gb_gtp_data_Squash,
   gb_gtp_data_SuperCruiserHalilovicJasmin,
-  gb_gtp_data_SuperSahPageSoftware,
+//  gb_gtp_data_SuperSahPageSoftware,
   gb_gtp_data_SvemirskiTrgovacVitanovIlija,
   gb_gtp_data_Tenis3VujkovDragan,
   gb_gtp_data_TenisBalintNenad,
