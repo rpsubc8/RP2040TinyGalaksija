@@ -100,5 +100,6 @@ It must be done from the home data directory of the Android device, so if we do 
 
 
 <h1>Precompile version</h1>
-Versions VGA, HDMI, with PS/2 to USB C converter (ps2usb) are available.<br>
-<a href='https://github.com/rpsubc8/RP2040TinyGalaksija/tree/main/precompile'>https://github.com/rpsubc8/RP2040TinyGalaksija/tree/main/precompile</a>
+Versions VGA, HDMI, with PS/2 to USB C converter (ps2usb) are available.<br><br>
+<a href='https://github.com/rpsubc8/RP2040TinyGalaksija/tree/main/precompile'>https://github.com/rpsubc8/RP2040TinyGalaksija/tree/main/precompile</a><br><br>
+I have left a version called <b>galaksijahdmips2usbvolt120</b>, where 1.2 volts is used, for a more stable overclock on those boards (FLASH speed problem) and HDMI monitors that may give problems.
