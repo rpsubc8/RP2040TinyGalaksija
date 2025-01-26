@@ -48,6 +48,23 @@
   #include "gtpZiulRistanovicDejan.h"
   #include "gtpZvezdice.h"
   #include "gtpZvjezdaneStaze.h"
+
+  //DEMOS 3 BEGIN
+  #include "gtpDemowin11check.h"
+  #include "gtpDemoHalloween.h"
+  #include "gtpDemoretroinfo.h"
+  //DEMOS 3 END
+
+  //DEMOS BEGIN 8
+  #include "gtpDemoStarsSolcTomaz.h"
+  #include "gtpDemoBioritam1984.h"
+  #include "gtpDemoBioritam219xx.h" 
+  #include "gtpDemoEvolucija19840331.h"
+  #include "gtpDemoFireSolcTomaz.h"   
+  #include "gtpDemoLightShow1987.h"
+  #include "gtpDemoOscilacije19xx.h"
+  #include "gtpDemoParticleSolcTomaz.h"
+ //DEMOS 8 END  
  #else
   #include "gtp/gtpAsteroidiGACSoftware.h"
   #include "gtp/gtpBiljar.h"
@@ -92,12 +109,31 @@
   #include "gtp/gtpZiulRistanovicDejan.h"
   #include "gtp/gtpZvezdice.h"
   #include "gtp/gtpZvjezdaneStaze.h"
+  
+  //DEMOS 3 BEGIN
+  #include "gtp/gtpDemowin11check.h"
+  #include "gtp/gtpDemoHalloween.h"
+  #include "gtp/gtpDemoretroinfo.h"
+  //DEMOS 3 END
+  
+ //DEMOS BEGIN 8
+ #include "gtp/gtpDemoStarsSolcTomaz.h"
+ #include "gtp/gtpDemoBioritam1984.h"
+ #include "gtp/gtpDemoBioritam219xx.h" 
+ #include "gtp/gtpDemoEvolucija19840331.h"
+ #include "gtp/gtpDemoFireSolcTomaz.h"  
+ #include "gtp/gtpDemoLightShow1987.h"
+ #include "gtp/gtpDemoOscilacije19xx.h"
+ #include "gtp/gtpDemoParticleSolcTomaz.h"
+ //DEMOS 8 END
  #endif 
 
 
 
  //#define max_list_gtp 43
- #define max_list_gtp 42
+ //#define max_list_gtp 42
+ //42 + 3 DEMOS + 8 DEMOS
+ #define max_list_gtp 53
  
  //gtp
  //Titulos
@@ -144,7 +180,24 @@
   "Zid GAC Software",
   "Ziul Ristanovic Dejan",
   "Zvez dice",
-  "Zvjez dane Staze"
+  "Zvjez dane Staze",
+  
+  //DEMOS 3 BEGIN
+  "Demo win11check",  
+  "Demo Halloween",  
+  "Demo retroinfo",  
+  //DEMOS 3 END
+  
+  //DEMOS 8 BEGIN
+  "Demo Stars Solc Tomaz",
+  "Demo Bioritam 1984",
+  "Demo Bioritam 2 19xx",  
+  "Demo Evolucija 1984 03 31",
+  "Demo Fire Solc Tomaz",  
+  "Demo Light Show 1987",
+  "Demo Oscilacije 19xx",
+  "Demo Particle Solc Tomaz"
+  //DEMOS 8 END  
  };
  
  //Size bytes
@@ -191,7 +244,24 @@
   2142,
   6673,
   1584,
-  4950 
+  4950,
+  
+  //DEMOS 3 BEGIN
+  782,  //win11check
+  2175, //Halloween
+  2477, //retroinfo
+  //DEMOS 3 END
+  
+  //DEMOS 8 BEGIN
+  573,   //DemoStarsSolcTomaz
+  2996,  //DemoBioritam1984
+  1366,  //DemoBioritam219xx
+  1063,  //DemoEvolucija19840331
+  772,   //DemoFireSolcTomaz
+  3001,  //DemoLightShow1987
+  504,   //DemoOscilacije19xx
+  631    //DemoParticleSolcTomaz
+  //DEMOS 8 END
  };
  
  
@@ -239,7 +309,24 @@
   gb_gtp_data_ZidGACSoftware,
   gb_gtp_data_ZiulRistanovicDejan,
   gb_gtp_data_Zvezdice,
-  gb_gtp_data_ZvjezdaneStaze 
+  gb_gtp_data_ZvjezdaneStaze,
+
+  //DEMOS BEGIN 3
+  gb_gtp_data_Demo_win11check,  
+  gb_gtp_data_Demo_Halloween,  
+  gb_gtp_data_Demo_retroinfo,
+  //DEMOS END 3
+  
+  //DEMOS BEGIN 8
+  gb_gtp_data_Demo_Stars_Solc_Tomaz,
+  gb_gtp_data_Demo_Bioritam_1984,
+  gb_gtp_data_Demo_Bioritam_2_19xx,  
+  gb_gtp_data_Demo_Evolucija_1984_03_31,
+  gb_gtp_data_Demo_Fire_Solc_Tomaz,    
+  gb_gtp_data_Demo_Light_Show_1987,
+  gb_gtp_data_Demo_Oscilacije_19xx,
+  gb_gtp_data_Demo_Particle_Solc_Tomaz  
+  //DEMOS 8 END  
  };
 
 
